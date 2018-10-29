@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title>Mobiscroll Test</title>
+	<link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_red.css">
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+</head>
+
+<body>
+	<h3>date and time </h3>
+	<input type="text" id="my"/>
+	
+<script>
+        flatpickr("#my", {
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+            minDate: "today",
+			minuteIncrement: '30'
+		});
+
+	</script>
+
+</body>
+
+</html>
